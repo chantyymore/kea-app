@@ -13,24 +13,25 @@
 <body>
     <div class="weather-app">
     <header>
-        <form>
-            <input type="search" placeholder="Enter a city..." required/>
-            <input type="submit" value="Search"/>
+        <form class="search-form">
+            <input type="search" placeholder="Enter a city..." required class="input" />
+            <input type="submit" value="Search" class="button" />
         </form>
     </header>
     <main>
+        <div class="weather-app-data">
         <div>
-            <h1>Paris</h1>
-            <p>
+            <h1 class="city">Paris</h1>
+            <p class="details">
                 Tuesday 14:49, scattered clouds
                 <br/>
-                Humidity: 66%, Wind: 3.13km/h
+                Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
             </p>
         </div>
-        <div>
-            ⛅ 12°C
+        <div class="temperature-container">
+            <div class="icon" >⛅</div><div class="temperature">12</div><div class="unit">°C</div>
         </div>
-        
+    </div>
     </main>
     <footer>Coded by <a href="https://github.com/chantyymore" target="_blank">Keamogetswe Moeketsi</a>, open-sourced on <a href="https://github.com/chantyymore/kea-app" target="_blank">Github</a> and hosted on <a href="https://keamo.netlify.app/" target="_blank">Netlify</a>.</footer>
     </div>
