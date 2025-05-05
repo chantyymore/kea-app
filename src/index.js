@@ -14,11 +14,12 @@ function refreshWeather(response){
     let windElement = document.querySelector("#wind-speed");
     windElement.innerHTML = `${response.data.wind.speed}km/h`;
     //for time and date
-    
     let timeElement = document.querySelector("#time");
     let date = new Date(response.data.time * 1000);
     timeElement.innerHTML = formatDate(date);
-    
+    //for icon
+    let iconElement = document.querySelector("#icon");
+    iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon"/>`;
 }
 
 function formatDate(date){
